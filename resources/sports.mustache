@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Clojure news</title>
+    </head>
+    <body style="font-family: Lucida Console; font-style: oblique;">
+        <div style="background-color: black; height: 60px; padding-top: 30px; font-size: 25px; border-radius: 25px;">
+             <a style="text-decoration: none; padding-left: 50px; margin-right: 50px; color: white;" href="/">Index</a>
+             <a style="text-decoration: none; margin-right: 50px; color: white;" href="/news">News</a>
+             <a style="text-decoration: none; margin-right: 50px; color: white;" href="/sports">Sport news</a>
+             <a style="text-decoration: none; margin-right: 50px; color: white;" href="/showbizz">Showbizz news</a>
+       </div>
+       
+       <div style="background-color: #D3D3D3; padding-left: 10px; width: 450px; height: 800px; position: absolute; right: 10px; margin-top: 10px; border-radius: 25px;">
+       <h1 style="padding-left: 150px;">Top news</h1>
+       <sections>
+         {{#popular}}
+         <a href="/byId/{{id}}" style="text-decoration: none; font-size: 18px; color: black;"><b>{{title}}</b></a>
+         <h1>----------------------</h1>
+         {{/popular}}
+       </sections>
+       </div>
+       
+	  <div class="container"  style="width: 800px; height: 800px; position: absolute; left: 50px; padding-top: 35px;">
+      
+  	  <sections>
+         {{#news}}
+           <a href="/byId/{{id}}" style="text-decoration: none; font-size: 18px; color: black;"><b>{{title}}</b></a>
+           <p style="padding-bottom: 15px;">{{part}}<p>
+         {{/news}}
+     </sections>
+  </div>
+    </body>
+</html>
