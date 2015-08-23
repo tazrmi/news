@@ -52,7 +52,9 @@ I found the code for this algorithm written in Java, but for the purposes of thi
 ##Literature
 
 [1] Luke VanderHart, Stuart Sierra (2010) "Practical Clojure"
+
 [2] Luke VanderHart, Ryan Neufeld (2014) "Clojure Cookbook, Recipes for Functional Programming"
+
 [3] How to Strike a Match;  http://www.catalysoft.com/articles/StrikeAMatch.html
 
 
@@ -61,4 +63,5 @@ I found the code for this algorithm written in Java, but for the purposes of thi
 Copyright © 2015 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or any later version.
+
 
