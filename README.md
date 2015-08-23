@@ -43,7 +43,7 @@ Character pairs that are prepared like this are now eligible to be used to find 
                         
 The similarity between two strings s1 and s2 is twice the number of character pairs that are common to both strings divided by the sum of the number of character pairs in the two strings. For our comparison of 'France' and 'French', the metric is computed as follows:
   
-![Alt text](http://www.catalysoft.com/images/howtostrikeamatch002.gif) 
+![Alt text](http://s3.postimg.org/hhnrdp92r/pic2.jpg) 
                         
 Given that the values of the metric always lie between 0 and 1, it is also very natural to express these values as percentages. For example, the similarity between 'France' and 'French' is 40%.  
 
