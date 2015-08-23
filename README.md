@@ -35,10 +35,15 @@ For example strings 'France' and 'French'. When you split them up into their cha
 
 								French: {Fr, re, en, nc, ch}
 
-Then work out which character pairs are in both strings. In this case, the intersection is {Fr, nc}. Now, I would like to express my finding as a numeric metric that reflects the size of the intersection relative to the sizes of the original strings. If pairs(x) is the function that generates the pairs of adjacent letters in a string, then my numeric metric of similarity is:
+Then work out which character pairs are in both strings. In this case, the intersection is {Fr, nc}. 
+
+Character pairs that are prepared like this are now eligible to be used to find the Sørensen–Dice index, or, as it is called in this application, the difference.
+
+difference(s1, s2)=(2* |pairs(s1)   ? pairs(s2)|)/(|pairs(s1)|+ |pairs(s2)| )
 
 ## License
 
 Copyright Â© 2015 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or any later version.
+
