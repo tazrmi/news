@@ -39,7 +39,7 @@ Then work out which character pairs are in both strings. In this case, the inter
 
 Character pairs that are prepared like this are now eligible to be used to find the Sørensen–Dice index, or, as it is called in this application, the difference.
 
-difference(s1, s2)=(2* |pairs(s1)   ? pairs(s2)|)/(|pairs(s1)|+ |pairs(s2)| )
+![Alt text](C:\Users\tazrmi\Documents\pic1.jpg)
 
 ## License
 
