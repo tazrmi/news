@@ -17,31 +17,27 @@
 
 (defn welcome []
   (render-template "index" {:newest (model/newest)
-                            :popular (model/mostPopular)})
+                            :popular (model/topNews)})
  )
 
 (defn news []
   (render-template "news" {:news (model/newsGenre)
-                           :popular (model/mostPopular)})
+                           :popular (model/topNews)})
   )
 
 (defn sports []
   (render-template "sports" {:news (model/sportsGenre)
-                             :popular (model/mostPopular)})
+                             :popular (model/topNews)})
   )
 
 
 (defn showbizz []
   (render-template "showbizz" {:news (model/showbizzGenre)
-                               :popular (model/mostPopular)})
+                               :popular (model/topNews)})
  )
 
 (defn byId [id]
-  (model/setDifferenceList)
-  
   (render-template "id" {:news (model/getById id)
-                           :popular (model/mostPopular)
-              :recomended (model/getSimilarTexts id)})
-  
-  
- )
+                           :popular (model/topNews)
+                           :similar (model/getSimilarTexts id)}))
+
