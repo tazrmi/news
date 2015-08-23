@@ -39,7 +39,7 @@ Then work out which character pairs are in both strings. In this case, the inter
 
 Character pairs that are prepared like this are now eligible to be used to find the Sørensen–Dice index, or, as it is called in this application, the difference.
 
-![Alt text](C:\Users\tazrmi\Documents\pic1.jpg)
+![Alt text](http://s12.postimg.org/nq8zq2ihp/pic1.jpg)
 
 ## License
 
