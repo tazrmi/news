@@ -39,7 +39,22 @@ Then work out which character pairs are in both strings. In this case, the inter
 
 Character pairs that are prepared like this are now eligible to be used to find the Sørensen–Dice index, or, as it is called in this application, the difference.
 
-![Alt text](http://s12.postimg.org/nq8zq2ihp/pic1.jpg)
+                        ![Alt text](http://s12.postimg.org/nq8zq2ihp/pic1.jpg)
+                        
+The similarity between two strings s1 and s2 is twice the number of character pairs that are common to both strings divided by the sum of the number of character pairs in the two strings. For our comparison of 'France' and 'French', the metric is computed as follows:
+  
+                        ![Alt text](http://www.catalysoft.com/images/howtostrikeamatch002.gif) 
+                        
+Given that the values of the metric always lie between 0 and 1, it is also very natural to express these values as percentages. For example, the similarity between 'France' and 'French' is 40%.  
+
+I found the code for this algorithm written in Java, but for the purposes of this app I wrote the code in Clojure.
+
+##Literature
+
+[1] Luke VanderHart, Stuart Sierra (2010) "Practical Clojure"
+[2] Luke VanderHart, Ryan Neufeld (2014) "Clojure Cookbook, Recipes for Functional Programming"
+[3] How to Strike a Match;  http://www.catalysoft.com/articles/StrikeAMatch.html
+
 
 ## License
 
