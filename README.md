@@ -14,6 +14,29 @@ Every news can be opened in a new page. The id of the news is used in this case,
 
 ## Sørensen–Dice index
 
+Sørensen–Dice index is a statistic used for comparing the similarity of two samples. The algorithm was driven by the following requirements:
+
+			A true reflection of lexical similarity - strings with small differences should be recognised as being similar. In particular, a significant substring overlap should point to a high level of similarity between the strings.
+
+			A robustness to changes of word order - two strings which contain the same words, but in a different order, should be recognised as being similar. On the other hand, if one string is just a random anagram of the characters contained in the other, then it should (usually) be recognised as dissimilar.
+
+			Language Independence - the algorithm should work not only in English, but in many different languages.
+			
+
+The algorithm in this application represents a string similarity metric that rewards both common substrings and a common ordering of those substrings. In addition, the algorithm considers not only the single longest common substring, but other common substrings too. The requirements may sound difficult to satisfy, but the solution is deceptively simple:
+
+			Find out how many adjacent character pairs are contained in both strings.
+
+The intention is that by considering adjacent characters, are is taken to account not only the characters, but also of the character ordering in the original string, since each character pair contains a little information about the original ordering.
+
+For example strings 'France' and 'French'. When you split them up into their character pairs you get:
+
+								France: {Fr, ra, an, nc, ce}
+
+								French: {Fr, re, en, nc, ch}
+
+Then work out which character pairs are in both strings. In this case, the intersection is {Fr, nc}. Now, I would like to express my finding as a numeric metric that reflects the size of the intersection relative to the sizes of the original strings. If pairs(x) is the function that generates the pairs of adjacent letters in a string, then my numeric metric of similarity is:
+
 ## License
 
 Copyright Â© 2015 FIXME
