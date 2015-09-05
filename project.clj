@@ -12,5 +12,4 @@
                   [de.ubercode.clostache/clostache "1.3.1"]
                   [org.clojure/java.jdbc "0.3.0-alpha5"]
                   [mysql/mysql-connector-java "5.1.25"]
-                  [com.h2database/h2 "1.3.170"]
-                 ])
+                  [com.h2database/h2 "1.3.170"]])
