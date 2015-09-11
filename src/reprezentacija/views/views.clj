@@ -17,7 +17,7 @@
 (defn welcome 
   []
   "Shows the index page."
-  (render-template "index" {:newest (model/newest)
+  (render-template "index" {:news (model/newest)
                             :popular (model/top-news)}))
 
 (defn news 

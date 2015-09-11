@@ -1,0 +1,66 @@
+body{
+	font-family: Lucida Console; 
+	font-style: oblique;
+}
+
+#menu{
+	background-color: black; 
+	height: 60px; 
+	width: 1280px;
+	padding-top: 30px; 
+	font-size: 25px; 
+	border-radius: 25px;
+	padding-left: 50px; 
+	
+}
+
+.a1{
+	text-decoration: none; 
+	color: white;
+	margin-right: 50px;
+}
+
+
+#right {
+   	background-color: #D3D3D3; 
+	padding-left: 10px; 
+	width: 450px; 
+	height: 800px; 
+	position: absolute; 
+	right: 10px; 
+	margin-top: 10px; 
+	border-radius: 25px;"
+}
+
+#title{
+	padding-left: 150px;	
+}
+
+.titles{
+	text-decoration: none;
+	font-size: 18px; 
+	color: black;
+}
+
+#container{
+	width: 800px; 
+	height: 800px; 
+	position: absolute; 
+	left: 50px; 
+	padding-top: 35px; 
+	padding-bottom: 50px;
+}
+
+#related{
+	width: 800px; 
+	height: 250px; 
+	position: absolute; 
+	left: 45px; 
+	margin-top: 700px;
+}
+
+#relatedtitles{
+	text-decoration: none;
+	font-size: 14px; 
+	color: black;
+}
