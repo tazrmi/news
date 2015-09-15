@@ -1,5 +1,4 @@
-(ns view.view
-  (:use compojure.core, ring.adapter.jetty)
+(ns controler.routes (:use compojure.core, ring.adapter.jetty)
   (:require [compojure.route :as route]
             [compojure.handler :as handler]
             [controler.controler :as controler]))

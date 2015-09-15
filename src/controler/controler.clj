@@ -8,8 +8,7 @@
 
 (defn read-template 
   [template-name]
-  (slurp (clojure.java.io/resource
-    (str template-name ".mustache"))))
+  (slurp (str "src/view/" template-name ".mustache")))
 
 (defn render-template 
   [template-file params]

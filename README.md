@@ -58,10 +58,3 @@ I found the code for this algorithm written in Java, but for the purposes of thi
 [3] How to Strike a Match;  http://www.catalysoft.com/articles/StrikeAMatch.html
 
 
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or any later version.
-
-
